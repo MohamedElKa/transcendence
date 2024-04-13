@@ -1,0 +1,213 @@
+@font-face{
+    font-family: myFont;
+    src:url("./fonts-figma/Neue\ Plak\ Black.ttf")
+}
+body{
+    background-color: #131A25;
+    margin: 0;
+    padding: 0;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+}
+
+.App{
+    height: 100vh;
+    width: 100vw;
+}
+.start{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.start .man{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: contain;
+}
+
+ .title img{
+    width: 30px;
+}
+
+.title{
+    width: 100vw;
+    padding-left: 35px;
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.start .welcome{
+    font-size: 70px;
+    margin-top: 150px;
+    width: 903px;
+    padding-left: 35px;
+
+}
+
+.start .welcome span{
+    color: #517DA2;
+}
+
+.start button{
+    border: 1px solid #517DA2;
+    background-color: transparent;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: 0.3s;
+    /* padding-b: 25px; */
+}
+
+.start button:hover{
+    background-color: #517DA2;
+    color: black;
+    
+}
+.start button:hover >  a{
+    color: black;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.App .login{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./pics_of_front_pages/2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -241px;
+    position: relative;
+
+}
+
+.login form{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: #13171C;
+    color: white;
+    position: absolute;
+    /* right: 0; */
+    right: 85px;
+    top: 185px;
+    border: 1px solid white;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    gap: 25px;
+}
+
+form .text{
+    text-align: center;
+}
+
+form .text h1{
+    font-size: 35px;
+    font-weight: 400;
+}
+form .text span{
+    display: block;
+}
+
+form  .in{
+   display: flex;
+   flex-direction: column; 
+   gap: 5px;
+
+}
+
+form .in label{
+    font-weight: 300;
+    font-size: 21px;
+}
+
+form .in input{
+    background-color: transparent;
+    border: 1px solid white;
+    height: 57px;
+    color: white;
+    caret-color: white;
+    font-size: 20px;
+    padding-left: 5px;
+}
+form .in input:focus{
+    outline: 0;
+}
+form button{
+    background-color: #517DA2;
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login a{
+    color: #00ADB5;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.login .text button{
+    border: 1px solid #00ADB5;
+    background-color: transparent;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    align-items: center;
+    transform: translateX(-50%);
+    left: 50%;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.login .text button img{
+    width: 50px;
+}
+
+form .text span{
+    border-bottom: 1px solid white;
+    width: 183px;
+    position: relative;
+    bottom: 50%;
+}
+form .text .spans{
+   display: flex;
+}
+form .text .spans p{
+   font-size: 20px;
+}
